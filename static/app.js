@@ -24,9 +24,9 @@ async function deleteMemo(event) {
 
 function displayMemo(memo) {
   const ul = document.querySelector("#memo-ul");
-
   const li = document.createElement("li");
   li.innerText = `${memo.content}`;
+  ul.appendChild(li);
 
   const editBtn = document.createElement("button");
   editBtn.innerText = "수정하기";
