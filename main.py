@@ -35,4 +35,4 @@ def delete_memo(memo_id: str):
             return '성공했습니다.'
     return '그런 메모는 없습니다.'
 
-app.mount("/", StaticFiles(directory='static', html=True), name='static')
+app.mount("/memo", StaticFiles(directory='static', html=True), name='static')
